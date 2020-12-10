@@ -1,0 +1,41 @@
+body {
+  background-color: #F0FFFF;
+}
+
+.container {
+    width: 60%;
+	margin-right: auto;
+    margin-left: auto;
+}
+
+.my_text {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.my_label {
+  font-style: italic;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.my_input {
+  width: 80%;
+  padding: 0.7em;
+  margin: 0.8em 0.2em;
+  background-color: #FFFFFF;
+  margin-right: auto;
+  margin-left: auto;
+  border-radius: 15px;
+}
+
+.my_button{
+  margin: 0 auto;
+  display: block;
+  width: 50%;
+  padding: 0.5em;
+  border-radius: 25px;
+  font-weight: bold;
+  font-size: 1em;
+  color: white;
+  background-color: #009999;
+}

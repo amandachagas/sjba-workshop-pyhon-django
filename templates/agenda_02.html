@@ -1,0 +1,35 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+   <head>
+      <link rel="stylesheet" href="{% static 'style.css' %}">
+      <title>Minha Agenda</title>
+   </head>
+   <body>
+     <div class="container">
+       
+       <h1 class="my_text">CADASTRE UM NOVO CONTATO!</h1>
+       <p class="my_text">Preencha os campos abaixo:</p>
+     
+       <form id="form_cadastro" method="post">
+       	{% csrf_token %}
+         <label class="my_label">Nome:</label>
+         <input type="text" name="this-nome" id="id_nome" placeholder="Nome completo" required class="my_input"><br/>
+         <label class="my_label">Telefone:</label>
+         <input type="tel" name="this-telefone" id="id_telefone" placeholder="(XX)XXXXX-XXXX" required class="my_input"><br/>
+         <br/>
+         <button type="submit" class="my_button">CADASTRAR</button>
+         
+       </form>
+
+       <p>Meus contatos</p>
+       <ul>
+       	{% for item in contatos %}
+       		<li>Nome: {{ item.nome }}, Telefone: {{ item.telefone }}</li>
+       	{% endfor %}
+       </ul>
+       
+     </div>
+     
+   </body>
+</html>
