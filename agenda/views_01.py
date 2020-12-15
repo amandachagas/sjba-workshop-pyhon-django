@@ -4,6 +4,6 @@ from django.http import HttpResponse
 # Create your views here.
 
 def index(request):
-	# return HttpResponse('Ola Mundo!')
-	return render(request, 'agenda.html')
+	return HttpResponse('Ola Mundo!')
+	# return render(request, 'agenda.html')
 
