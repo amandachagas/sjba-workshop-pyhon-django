@@ -1,6 +1,6 @@
-# Guia de conducao do workshop
+# Workshop Python + Django -- Guia de conducao
 
-1. Instalar o django: `pip install django`
+1. Criar sua conta gratuita no [Paiza Cloud](https://paiza.cloud/signup). No Paiza Cloud, **criar um server com Django**.
 
 1. Iniciar o projeto: `django-admin startproject devweb`
 
@@ -65,12 +65,25 @@
 
 1. Para **persistir** os dados enviados pelo form no banco de dados, primeiro precisamos verificar se o `request` da view eh do tipo `POST`. Caso seja, criamos um objeto com os dados do form e retornamos a lista de objetos existentes  *-  Colar o texto passado  -  views_03.py*
 
-1. **Parabens, voce concluiu o workshop!** Agora voce sabe fazer uma aplicacao Django com registro de objetos e listagem dinamica dos mesmos no template!!!
+1. **Parabens, voce concluiu o Workshop!** Agora voce sabe fazer uma aplicacao Django com registro de objetos e listagem dinamica dos mesmos no template!!!
 
-## Atividade Extra
+## Exercicio
+
+Considerando que agora a agenda deve registrar tambem a **cidade** dos contatos, realize as alteracoes necessarias para:
+   - Informar a cidade no registro do contato
+   - Persistir a informacao da cidade
+   - Listar, alem de nome e telefone, a informacao da cidade
+>
+
+#### Extra: Curiosidade/Aprofundamento
 
 O Django oferece uma area administrativa `http://localhost:8000/admin/`. Caso tenha reparado, existe um arquivo dentro no app agenda chamado **admin.py**. Eh nesse arquivo que voce configura o que quer exibir na area administrativa.
 
 * **Atividade extra:** 
-   * Criar um super-usuario no django para acessar essa area *dica: usar o comando do django no terminal*; 
-   * Configurar o **admin.py** para exibir os contatos na area administrativa.
+   * Criar um super-usuario no django para acessar essa area *dica: usar o comando do django no terminal*
+   * Configurar o **admin.py** para exibir os contatos na area administrativa
+
+
+#### Creditos
+Esse Workshop foi realizado como uma atividade avaliativa da disciplina Desenvolvimento Web do curso Residência em Software SJBA oferecido pela UFBA em 2020. Workshop realizado em 21/12/2020, alunos responsaveis: Amanda Chagas de Oliveira e Reno Costa Alencar.
+   
