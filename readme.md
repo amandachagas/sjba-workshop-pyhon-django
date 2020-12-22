@@ -39,7 +39,8 @@
 1. Carregando arquivos estáticos (css, js...):
    1. Criar no nível do projeto uma pasta chamada static e dentro dela o arquivo **style.css**  *-  Colar o texto passado  -  style.css*
    1. Configurar o **settings.py** (essa parte varia de acordo com o SO utilizado) para apontar para os arquivos estáticos, no final do arquivo adicione:
-      1. **Ubuntu:** `STATIC_URL = '/home/ubuntu/devweb/site/static/'`, `STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static'),]` e `STATIC_ROOT = os.path.join(BASE_DIR, '/home/ubuntu/devweb/site/static')`
+      1. **Ubuntu:** `STATIC_URL = '/static/'`, `STATICFILES_DIRS = [os.path.join(BASE_DIR, 'site/static'),]` e `STATIC_ROOT = os.path.join(BASE_DIR, 'static')`
+      1. **Ubuntu (alternativa flat):** `STATIC_URL = '/home/ubuntu/devweb/site/static/'`, `STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static'),]` e `STATIC_ROOT = os.path.join(BASE_DIR, '/home/ubuntu/devweb/site/static')`
       1. **Debian:** `STATIC_URL = str(BASE_DIR / 'site/static') + '/'`, `STATICFILES_DIRS = [BASE_DIR / 'static',]` e `STATIC_ROOT = str(BASE_DIR / 'site/static/')`
    1. No nível do projeto, rodar o comando: `python3 manage.py collectstatic`
    1. Na primeira linha do **agenda.html** adicionar a tag: `{% load static %}`
